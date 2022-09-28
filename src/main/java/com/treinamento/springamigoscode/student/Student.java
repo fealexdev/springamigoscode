@@ -19,6 +19,7 @@ public class Student {
     private String name;
     private String email;
     private LocalDate dob;
+    @Transient
     private Integer age;
 
     //Construtor 1
@@ -26,20 +27,18 @@ public class Student {
     }
 
     //Construtor 2
-    public Student(long id, String name, String email, LocalDate dob, Integer age) {
+    public Student(long id, String name, String email, LocalDate dob) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
     }
 
     //Construtor 3
-    public Student(String name, String email, LocalDate dob, Integer age) {
+    public Student(String name, String email, LocalDate dob) {
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
     }
 
     //    Getters and setters
